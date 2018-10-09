@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{width:670px;height:240px;margin:100px auto;position: relative;overflow:hidden;}
+        .box-show{width:10000px;height:240px;position: absolute;top:0;left:0;}
+        .box-show img{width:670px;height:240px;display:block;float:left;}
+        .box-btn{position:absolute;right:20px;bottom:5px;}
+        .box-btn li{width:30px;height:30px;background:#ccc;border-radius:50%;
+            display: inline-block;line-height:30px;text-align:center;}
+        .box-btn .active{background:#333;}
+        .box .left{width:28px;height:45px;position:absolute;top:106px;left:10px;background:pink;background:url('images/pre.png')}
+        .box .right{width:28px;height:45px;position:absolute;top:106px;right:10px;background:pink;
+            background:url('images/pre.png') 45px 0;}
+        #box1{width:200px;height:200px;background:#f00;position: relative;}
+    </style>
+</head>
+<body>
+    <div id="box1">1</div>
+    <div class="box">
+        <div class="box-show">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+        </div>
+        <ul class="box-btn"> 
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+        <div class="left"> </div>
+        <div class="right"> </div>
+    </div>
+    <script src="js/move0.0.3.js"></script>
+    <script src="js/swiper2.0.js"></script>
+    <script>
+        // move('#box1','width',500)
+        // move('#box1',{width:500,height:600,left:200},1000,function(){
+        //     move('#box1',{width:100,height:100,left:0},1000)
+        // })
+        // var $box1=document.getElementById('box1');
+        // console.log($box1)
+        // document.onmousedown=function(ev){
+        //     ev=ev||window.event
+        //     var x=ev.pageX;
+        //     var y=ev.pageY;
+        //     var bx=$box1.offsetWidth,
+        //     by=$box1.offsetHeight;
+        //     // $box1.style.left=x-bx/2 + 'px';
+        //     // $box1.style.top=y-by/2 + 'px';
+        //     move($box1,{left: x-bx/2,top:y-by/2,},500)
+
+        // }
+    </script>
+</body>
+</html>
